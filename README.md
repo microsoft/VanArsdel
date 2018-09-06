@@ -1,4 +1,6 @@
 VanArsdel UWP Sample
+
+![using component overrides](VanArsdel_MyLights.png)
 ===
 
 VanArsdel is an end-to-end sample built to showcase the Microsoft Fluent Design System as well as other capabilities of the Universal Windows Platform. It allows the user to browse the virtual "store" of lamps that can be organized and decorated. 

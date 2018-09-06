@@ -523,9 +523,6 @@
     <Content Include="Assets\DemoAssets\Lamps\Shelf_Top_Normal.png" />
     <Content Include="Assets\DemoAssets\Lamps\VanArsdel1.png" />
     <Content Include="Assets\DemoAssets\Lamps\VanArsdel_Normal.png" />
-    <Content Include="Assets\Mats\test1.png" />
-    <Content Include="Assets\Mats\test2.png" />
-    <Content Include="Assets\Mats\test3.png" />
     <Content Include="Assets\Products\Lamp_16_1_white.png" />
     <Content Include="Assets\Products\Lamp_16_StandTrans.png" />
     <Content Include="Assets\Products\Lamp_07_Redo2.png" />

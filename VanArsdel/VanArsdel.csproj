@@ -448,7 +448,6 @@
     <Content Include="Assets\Wide310x150Logo.scale-150.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
     <Content Include="Resources\en-us\ModelData.json" />
-    <None Include="nuget.config" />
     <None Include="VanArsdel_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

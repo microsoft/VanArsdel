@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddRoomButtonCaption.Text" xml:space="preserve">
+    <value>Add room</value>
+  </data>
+  <data name="AppDescription" xml:space="preserve">
+    <value>VanArsdel is an end-to-end sample built to showcase the Microsoft Fluent Design System as well as other capabilities of the Universal Windows Platform. It allows the user to browse the virtual "store" of lamps that can be organized and decorated.</value>
+  </data>
+  <data name="AppDisplayName" xml:space="preserve">
+    <value>VanArsdel</value>
+  </data>
+  <data name="DeviceContextMenuItemMove" xml:space="preserve">
+    <value>Move to</value>
+  </data>
+  <data name="DeviceContextMenuItemRemove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="DeviceContextMenuItemRename" xml:space="preserve">
+    <value>Rename</value>
+  </data>
+  <data name="NameFlyoutInputHeader" xml:space="preserve">
+    <value>Enter name</value>
+  </data>
+  <data name="NameFlyoutOkButtonContent" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="MainPageNavMenuItem" xml:space="preserve">
+    <value>My Lights</value>
+  </data>
+  <data name="StorePageNavMenuItem" xml:space="preserve">
+    <value>Shop</value>
+  </data>
+  <data name="PresetHeader.Text" xml:space="preserve">
+    <value>Presets</value>
+  </data>
+  <data name="DayRadioButton.Content" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="NightRadioButton.Content" xml:space="preserve">
+    <value>Night</value>
+  </data>
+  <data name="RoomNameSuggestions" xml:space="preserve">
+    <value>Bedroom,Living Room,Dining Room,Den,Study,Kitchen,Attic,Basement,Bathroom,Garage,Hall,Library,Garderobe</value>
+  </data>
+  <data name="AddCreditOrDebitCardCaption.Text" xml:space="preserve">
+    <value>Add a credit or debit card</value>
+  </data>
+  <data name="CardHolderNameField.Header" xml:space="preserve">
+    <value>Cardholder name</value>
+  </data>
+  <data name="CardHolderNameField.PlaceholderText" xml:space="preserve">
+    <value>Enter name</value>
+  </data>
+  <data name="AddressField.Header" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="AddressField.PlaceholderText" xml:space="preserve">
+    <value>Enter address</value>
+  </data>
+  <data name="BuyButton.Content" xml:space="preserve">
+    <value>Buy</value>
+  </data>
+  <data name="CancelProductConfigurationButton.Content" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CardNumberField.Header" xml:space="preserve">
+    <value>Card number</value>
+  </data>
+  <data name="CardNumberField.PlaceholderText" xml:space="preserve">
+    <value>Enter card number</value>
+  </data>
+  <data name="CategorySelectorPromptCaption.Text" xml:space="preserve">
+    <value>What type of lamp would you like?</value>
+  </data>
+  <data name="CCVExplanationPromptCaption.Content" xml:space="preserve">
+    <value>What's this?</value>
+  </data>
+  <data name="CCVField.Header" xml:space="preserve">
+    <value>CCV</value>
+  </data>
+  <data name="CCVField.PlaceholderText" xml:space="preserve">
+    <value>XXX</value>
+  </data>
+  <data name="CityField.Header" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="CityField.PlaceholderText" xml:space="preserve">
+    <value>Enter city</value>
+  </data>
+  <data name="CreditCardExpirationDateMonthSelector.Header" xml:space="preserve">
+    <value>Expiration date</value>
+    <comment>This is the "Expiration Date" header that is shared for both the Month and Year selectors</comment>
+  </data>
+  <data name="CreditCardExpirationDateMonthSelector.PlaceholderText" xml:space="preserve">
+    <value>MM</value>
+  </data>
+  <data name="CreditCardExpirationDateYearSelector.PlaceholderText" xml:space="preserve">
+    <value>YYYY</value>
+  </data>
+  <data name="PurchaseFlowCancelButton.Content" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="PurchaseFlowNextButton.Content" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="StateSelector.Header" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="StateSelector.PlaceholderText" xml:space="preserve">
+    <value>Enter state</value>
+  </data>
+  <data name="StoreCustomizationPromptCaption.Text" xml:space="preserve">
+    <value>Customize your lamp starting at $299</value>
+  </data>
+  <data name="StoreCustomizeButton.Content" xml:space="preserve">
+    <value>Create your own</value>
+  </data>
+  <data name="StoreFeaturedTitleCaption.Text" xml:space="preserve">
+    <value>FEATURED</value>
+  </data>
+  <data name="StoreHeroCaption.Text" xml:space="preserve">
+    <value>Bright.  Smart.  Unique.</value>
+  </data>
+  <data name="SubTotalCaption.Text" xml:space="preserve">
+    <value>Sub Total</value>
+  </data>
+  <data name="SubTotalValueDisplay.Text" xml:space="preserve">
+    <value>$740.00</value>
+  </data>
+  <data name="ZipCodeField.Header" xml:space="preserve">
+    <value>ZIP</value>
+  </data>
+  <data name="ZipCodeField.PlaceholderText" xml:space="preserve">
+    <value>Enter zip code</value>
+  </data>
+  <data name="SwipeItemMoveTo.Text" xml:space="preserve">
+    <value>Move to</value>
+  </data>
+  <data name="SwipeItemRemove.Text" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="SwipeItemRename.Text" xml:space="preserve">
+    <value>Rename</value>
+  </data>
+  <data name="DataPath" xml:space="preserve">
+    <value>ms-appx:///Resources/en-us/ModelData.json</value>
+  </data>
+  <data name="AddRoomButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Add room</value>
+  </data>
+  <data name="NavViewItemRemoveButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="CreditCardExpirationDateMonthSelector.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Expiration date month</value>
+  </data>
+  <data name="CreditCardExpirationDateYearSelector.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Expiration date year</value>
+  </data>
+  <data name="StateSelector.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="BillingAddressField.Header" xml:space="preserve">
+    <value>Billing address</value>
+  </data>
+  <data name="BillingAddressField.PlaceholderText" xml:space="preserve">
+    <value>Enter billing address</value>
+  </data>
+  <data name="BillingCityField.Header" xml:space="preserve">
+    <value>Billing city</value>
+  </data>
+  <data name="BillingCityField.PlaceholderText" xml:space="preserve">
+    <value>Enter billing city</value>
+  </data>
+  <data name="BillingStateSelector.Header" xml:space="preserve">
+    <value>Billing state</value>
+  </data>
+  <data name="BillingStateSelector.PlaceholderText" xml:space="preserve">
+    <value>Enter state</value>
+  </data>
+  <data name="BillingStateSelector.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Billing state</value>
+  </data>
+  <data name="BillingZipCodeField.Header" xml:space="preserve">
+    <value>Billing ZIP</value>
+  </data>
+  <data name="BillingZipCodeField.PlaceholderText" xml:space="preserve">
+    <value>Enter billing zip code</value>
+  </data>
+  <data name="CreditCardExpirationDateYearSelector.Header" xml:space="preserve">
+    <value>Year</value>
+  </data>
+</root>

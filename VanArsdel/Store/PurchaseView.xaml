@@ -1,0 +1,169 @@
+﻿<!--
+    Copyright (c) Microsoft Corporation. All rights reserved.
+    Licensed under the MIT License.
+-->
+<local:PurchaseViewBase
+    x:Class="VanArsdel.PurchaseView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:VanArsdel"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="300"
+    d:DesignWidth="400"
+    Loaded="UserControl_Loaded"
+    mc:Ignorable="d">
+
+    <Grid>
+        <Rectangle
+            x:Name="Backdrop"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            AutomationProperties.AccessibilityView="Raw"
+            Fill="{ThemeResource CategorySelectorBackdropBrush}"
+            IsHitTestVisible="True"
+            Tapped="{x:Bind Path=ViewModel.OnLightDismiss, Mode=OneWay}" />
+
+        <Grid
+            x:Name="PurchaseForm"
+            Width="548"
+            Margin="24,24,24,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="{ThemeResource PurchaseBackdropBrush}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <ScrollViewer
+                Grid.Row="0"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                HorizontalScrollBarVisibility="Disabled"
+                HorizontalScrollMode="Disabled"
+                VerticalScrollBarVisibility="Auto"
+                VerticalScrollMode="Auto">
+                <StackPanel Margin="24,18,24,8">
+                    <TextBlock
+                        x:Uid="AddCreditOrDebitCardCaption"
+                        Margin="0,0,0,16"
+                        Style="{StaticResource SubtitleTextBlockStyle}" />
+                    <TextBox
+                        x:Name="CardHolderNameField"
+                        x:Uid="CardHolderNameField"
+                        Margin="0,0,0,16"
+                        HorizontalAlignment="Stretch"
+                        Text="{x:Bind ViewModel.Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                    <TextBox
+                        x:Name="CardNumberField"
+                        x:Uid="CardNumberField"
+                        Margin="0,0,0,16"
+                        HorizontalAlignment="Stretch"
+                        Text="{x:Bind ViewModel.CardNumber, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                    <Grid Margin="0,0,0,16">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="4" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <ComboBox
+                            x:Uid="CreditCardExpirationDateMonthSelector"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Bottom"
+                            SelectedValue="{x:Bind ViewModel.CardExpirationMonth, Mode=TwoWay}">
+                            <x:String>01</x:String>
+                            <x:String>02</x:String>
+                            <x:String>03</x:String>
+                            <x:String>04</x:String>
+                            <x:String>05</x:String>
+                            <x:String>06</x:String>
+                            <x:String>07</x:String>
+                            <x:String>08</x:String>
+                            <x:String>09</x:String>
+                            <x:String>10</x:String>
+                            <x:String>11</x:String>
+                            <x:String>12</x:String>
+                        </ComboBox>
+                        <ComboBox
+                            x:Uid="CreditCardExpirationDateYearSelector"
+                            Grid.Column="2"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Bottom"
+                            IsEditable="True"
+                            SelectedValue="{x:Bind ViewModel.CardExpirationYear, Mode=TwoWay}">
+                            <x:String>2018</x:String>
+                            <x:String>2019</x:String>
+                            <x:String>2020</x:String>
+                            <x:String>2021</x:String>
+                            <x:String>2022</x:String>
+                            <x:String>2023</x:String>
+                            <x:String>2024</x:String>
+                            <x:String>2025</x:String>
+                            <x:String>2026</x:String>
+                        </ComboBox>
+                    </Grid>
+                    <Grid Margin="0,0,0,24">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="4" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <PasswordBox
+                            x:Uid="CCVField"
+                            HorizontalAlignment="Stretch"
+                            MaxLength="4"
+                            Password="{x:Bind ViewModel.CCV, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                            PasswordChar="•" />
+                        <HyperlinkButton
+                            x:Uid="CCVExplanationPromptCaption"
+                            Grid.Column="2"
+                            Margin="4,0,0,5"
+                            VerticalAlignment="Bottom" />
+                    </Grid>
+                    <TextBox
+                        x:Uid="AddressField"
+                        Margin="0,0,0,16"
+                        HorizontalAlignment="Stretch"
+                        Text="{x:Bind ViewModel.Address, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                    <TextBox
+                        x:Uid="CityField"
+                        Margin="0,0,0,16"
+                        HorizontalAlignment="Stretch"
+                        Text="{x:Bind ViewModel.City, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                    <Grid Margin="0,0,0,24">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="4" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <TextBox x:Uid="StateSelector" HorizontalAlignment="Stretch" />
+                        <TextBox
+                            x:Name="ZipCodeField"
+                            x:Uid="ZipCodeField"
+                            Grid.Column="2"
+                            HorizontalAlignment="Stretch"
+                            Text="{x:Bind ViewModel.Zip, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                    </Grid>
+                </StackPanel>
+            </ScrollViewer>
+            <Grid Grid.Row="1" Margin="24,4,24,24">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="4" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Button
+                    x:Uid="PurchaseFlowCancelButton"
+                    Height="36"
+                    HorizontalAlignment="Stretch"
+                    Click="{x:Bind Path=ViewModel.OnCancel}" />
+                <Button
+                    x:Uid="PurchaseFlowNextButton"
+                    Grid.Column="2"
+                    Height="36"
+                    HorizontalAlignment="Stretch"
+                    Style="{StaticResource AccentButtonStyle}" />
+            </Grid>
+        </Grid>
+    </Grid>
+</local:PurchaseViewBase>

@@ -1,0 +1,1798 @@
+﻿{
+  "SchemaVersion": "1.0",
+  "Rooms": [
+    {
+      "Id": "RoomA",
+      "Caption": "Living Room"
+    },
+    {
+      "Id": "RoomB",
+      "Caption": "Bedroom"
+    },
+    {
+      "Id": "RoomC",
+      "Caption": "Other"
+    }
+  ],
+  "Presets": [
+    {
+      "Id": "PresetA",
+      "Caption": "Default",
+      "IconPath": "ms-appx:///Assets/ShapeAnim/default.png",
+      "Items": [
+        {
+          "PropertyId": "LightsOn",
+          "Value": "true"
+        },
+        {
+          "PropertyId": "Brightness",
+          "Value": "1200"
+        },
+        {
+          "PropertyId": "LightBulbColor",
+          "Value": "#FFFFFFFF"
+        }
+      ]
+    },
+    {
+      "Id": "PresetB",
+      "Caption": "Party",
+      "IconPath": "ms-appx:///Assets/ShapeAnim/party.png",
+      "Items": [
+        {
+          "PropertyId": "LightsOn",
+          "Value": "true"
+        },
+        {
+          "PropertyId": "Brightness",
+          "Value": "1100"
+        },
+        {
+          "PropertyId": "LightBulbColor",
+          "Value": "#FFc567FF"
+        }
+      ]
+    },
+    {
+      "Id": "PresetC",
+      "Caption": "Sleep",
+      "IconPath": "ms-appx:///Assets/ShapeAnim/sleep.png",
+      "Items": [
+        {
+          "PropertyId": "LightsOn",
+          "Value": "true"
+        },
+        {
+          "PropertyId": "Brightness",
+          "Value": "850"
+        },
+        {
+          "PropertyId": "LightBulbColor",
+          "Value": "#FF8f5127"
+        }
+      ]
+    },
+    {
+      "Id": "PresetD",
+      "Caption": "Movie",
+      "IconPath": "ms-appx:///Assets/ShapeAnim/movie.png",
+      "Items": [
+        {
+          "PropertyId": "LightsOn",
+          "Value": "true"
+        },
+        {
+          "PropertyId": "Brightness",
+          "Value": "720"
+        },
+        {
+          "PropertyId": "LightBulbColor",
+          "Value": "#FFffa442"
+        }
+      ]
+    },
+    {
+      "Id": "PresetE",
+      "Caption": "Energetic",
+      "IconPath": "ms-appx:///Assets/ShapeAnim/energenic.png",
+      "Items": [
+        {
+          "PropertyId": "LightsOn",
+          "Value": "true"
+        },
+        {
+          "PropertyId": "Brightness",
+          "Value": "1300"
+        },
+        {
+          "PropertyId": "LightBulbColor",
+          "Value": "#FF2270ff"
+        }
+      ]
+    },
+    {
+      "Id": "PresetF",
+      "Caption": "Game",
+      "IconPath": "ms-appx:///Assets/ShapeAnim/game.png",
+      "Items": [
+        {
+          "PropertyId": "LightsOn",
+          "Value": "true"
+        },
+        {
+          "PropertyId": "Brightness",
+          "Value": "1000"
+        },
+        {
+          "PropertyId": "LightBulbColor",
+          "Value": "#FF62fbff"
+        }
+      ]
+    }
+  ],
+  "DeviceCategories": [
+    {
+      "Id": "FloorLamp",
+      "Thumbnail": "ms-appx:///Assets/Products/FloorLamp.png",
+      "ThumbnailHeight": 543,
+      "ThumbnailTopMargin": 30,
+      "Caption": "Floor Lamps",
+      "ShowDeviceShelf": "false",
+      "ShelfOffset": {
+        "X": "0",
+        "Y": "0",
+        "Z": "0"
+      },
+      "DeviceOffset": {
+        "X": "0",
+        "Y": "0",
+        "Z": "0"
+      },
+      "SpotlightOffset": {
+        "X": "0",
+        "Y": "0",
+        "Z": "0"
+      },
+      "Spotlight1Offset": {
+        "X": "0",
+        "Y": "0",
+        "Z": "0"
+      },
+      "PointlightOffset": {
+        "X": "0",
+        "Y": "0",
+        "Z": "0"
+      },
+      "SharedBitmapLists": [
+        {
+          "Id": "TopBitmaps",
+          "List": [
+            {
+              "Id": "Floor1Top",
+              "Caption": "Floor 1 Top",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Floor1/Top_Color.png",
+              "Size": {
+                "Width": "232",
+                "Height": "238"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Floor1/Top_Thumb.png",
+              "Metadata": [
+                {
+                  "Id": "HaloOffset",
+                  "Value": "-714"
+                },
+                {
+                  "Id": "HaloSize",
+                  "Value": "1920x1920"
+                }
+              ]
+            },
+            {
+              "Id": "Floor2Top",
+              "Caption": "Floor 2 Top",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Floor2/Top_Color.png",
+              "Size": {
+                "Width": "232",
+                "Height": "238"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Floor2/Top_Thumb.png",
+              "Metadata": [
+                {
+                  "Id": "HaloOffset",
+                  "Value": "-714"
+                },
+                {
+                  "Id": "HaloSize",
+                  "Value": "1920x1920"
+                }
+              ]
+            },
+            {
+              "Id": "Floor3Top",
+              "Caption": "Floor 3 Top",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Floor3/Top_Color.png",
+              "Size": {
+                "Width": "232",
+                "Height": "238"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Floor3/Top_Thumb.png",
+              "Metadata": [
+                {
+                  "Id": "HaloOffset",
+                  "Value": "-705"
+                },
+                {
+                  "Id": "HaloSize",
+                  "Value": "1920x1920"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "MiddleBitmaps",
+          "List": [
+            {
+              "Id": "Floor1Middle",
+              "Caption": "Floor 1 Middle",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Floor1/Middle_Color.png",
+              "Size": {
+                "Width": "19",
+                "Height": "419"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Floor1/Middle_Thumb.png"
+            }
+          ]
+        },
+        {
+          "Id": "BottomBitmaps",
+          "List": [
+            {
+              "Id": "Floor1Bottom",
+              "Caption": "Floor 1 Bottom",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Floor1/Bottom_Color.png",
+              "Size": {
+                "Width": "1460",
+                "Height": "188"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Floor1/Bottom_Thumb.png"
+            },
+            {
+              "Id": "Floor3Bottom",
+              "Caption": "Floor 3 Bottom",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Floor3/Bottom_Color.png",
+              "Size": {
+                "Width": "1460",
+                "Height": "188"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Floor3/Bottom_Thumb.png"
+            },
+            {
+              "Id": "Floor2Bottom",
+              "Caption": "Floor 2 Bottom",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Floor2/Bottom_Color.png",
+              "Size": {
+                "Width": "1460",
+                "Height": "188"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Floor2/Bottom_Thumb.png"
+            }
+          ]
+        }
+      ],
+      "DefaultDevice": {
+        "Id": "DeviceA",
+        "Category": "FloorLamp",
+        "Caption": "Floor Lamp",
+        "Thumbnail": "ms-appx:///Assets/Products/Lamp_16_1.png",
+        "Room": "RoomA",
+        "Properties": [
+          {
+            "Id": "LightsOn",
+            "Type": "PropertyBool",
+            "Caption": "Lights",
+            "Value": "true",
+            "IsVisibleInProductEditor": "true",
+            "IsVisibleInMyLights": "true"
+          },
+          {
+            "Id": "Brightness",
+            "Type": "PropertyNumber",
+            "Caption": "Brightness",
+            "Value": "700",
+            "SmallChange": "1",
+            "LargeChange": "10",
+            "Min": "0",
+            "Max": "1500",
+            "StepValue": "1",
+            "IsVisibleInProductEditor": "true",
+            "IsVisibleInMyLights": "true"
+          },
+          {
+            "Id": "LightBulbColor",
+            "Type": "PropertyColorPalette",
+            "Caption": "Bulb Color",
+            "Value": "#FFFAEBD7",
+            "CustomColor": "#FF800080",
+            "IsVisibleInProductEditor": "true",
+            "IsVisibleInMyLights": "true",
+            "Palette": [ "#ffffffff", "#ffcd6767", "#ff8bacb3", "#ffcd975d", "#ffc3b870", "#ff6cc1c3", "#ff7b7ecf", "#ffa36fc3", "#ffc36aa8", "#ffb3b294", "#ffc2acb6" ]
+          },
+          {
+            "Id": "TopBitmap",
+            "Type": "PropertyBitmapPicker",
+            "Caption": "Top",
+            "Value": "Floor1Top",
+            "IsVisibleInProductEditor": "true",
+            "IsVisibleInMyLights": "false",
+            "Bitmaps": "TopBitmaps"
+          },
+          {
+            "Id": "MiddleBitmap",
+            "Type": "PropertyBitmapPicker",
+            "Caption": "Middle",
+            "Value": "Floor1Middle",
+            "IsVisibleInProductEditor": "true",
+            "IsVisibleInMyLights": "false",
+            "Bitmaps": "MiddleBitmaps"
+          },
+          {
+            "Id": "BottomBitmap",
+            "Type": "PropertyBitmapPicker",
+            "Caption": "Bottom",
+            "Value": "Floor1Bottom",
+            "IsVisibleInProductEditor": "true",
+            "IsVisibleInMyLights": "false",
+            "Bitmaps": "BottomBitmaps"
+          },
+          {
+            "Id": "Engraving",
+            "Type": "PropertyString",
+            "Caption": "Engrave",
+            "Value": "",
+            "IsVisibleInProductEditor": "true",
+            "IsVisibleInMyLights": "false"
+          }
+        ]
+      }
+    },
+    {
+      "Id": "DeskLamp",
+      "Thumbnail": "ms-appx:///Assets/Products/DeskLamp.png",
+      "ThumbnailHeight": 440,
+      "ThumbnailTopMargin": 40,
+      "Caption": "Table Lamps",
+      "ShowDeviceShelf": "true",
+      "ShelfOffset": {
+        "X": "0",
+        "Y": "0",
+        "Z": "0"
+      },
+      "DeviceOffset": {
+        "X": "0",
+        "Y": "0",
+        "Z": "-500"
+      },
+      "SpotlightOffset": {
+        "X": "0",
+        "Y": "0",
+        "Z": "0"
+      },
+      "Spotlight1Offset": {
+        "X": "0",
+        "Y": "0",
+        "Z": "0"
+      },
+      "PointlightOffset": {
+        "X": "0",
+        "Y": "0",
+        "Z": "0"
+      },
+      "SharedBitmapLists": [
+        {
+          "Id": "TopBitmaps",
+          "List": [
+            {
+              "Id": "Desk9Top",
+              "Caption": "Desk 9 Top",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk9/Top_Color.png",
+              "Size": {
+                "Width": "186",
+                "Height": "201"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk9/Top_Thumb.png",
+              "Metadata": [
+                {
+                  "Id": "HaloOffset",
+                  "Value": "-380"
+                },
+                {
+                  "Id": "HaloSize",
+                  "Value": "960x960"
+                }
+              ]
+            },
+            {
+              "Id": "Desk6Top",
+              "Caption": "Desk 6 Top",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk6/Top_Color.png",
+              "Size": {
+                "Width": "291",
+                "Height": "151"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk6/Top_Thumb.png",
+              "Metadata": [
+                {
+                  "Id": "HaloOffset",
+                  "Value": "-290"
+                },
+                {
+                  "Id": "HaloSize",
+                  "Value": "960x960"
+                }
+              ]
+            },
+            {
+              "Id": "Desk7Top",
+              "Caption": "Top 35",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk7/Top_Color.png",
+              "Size": {
+                "Width": "290",
+                "Height": "163"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk7/Top_Thumb.png",
+              "Metadata": [
+                {
+                  "Id": "HaloOffset",
+                  "Value": "-290"
+                },
+                {
+                  "Id": "HaloSize",
+                  "Value": "960x960"
+                }
+              ]
+            },
+            {
+              "Id": "Desk4Top",
+              "Caption": "Desk 4 Top",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk4/Top_Color.png",
+              "Size": {
+                "Width": "233",
+                "Height": "169"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk4/Top_Thumb.png",
+              "Metadata": [
+                {
+                  "Id": "HaloOffset",
+                  "Value": "-295"
+                },
+                {
+                  "Id": "HaloSize",
+                  "Value": "960x960"
+                }
+              ]
+            },
+            {
+              "Id": "Desk5Top",
+              "Caption": "Desk 5 Top",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk5/Top_Color.png",
+              "Size": {
+                "Width": "330",
+                "Height": "173"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk5/Top_Thumb.png",
+              "Metadata": [
+                {
+                  "Id": "HaloOffset",
+                  "Value": "-250"
+                },
+                {
+                  "Id": "HaloSize",
+                  "Value": "960x960"
+                }
+              ]
+            },
+            {
+              "Id": "Desk1Top",
+              "Caption": "Desk 1 Top",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk1/Top_Color.png",
+              "Size": {
+                "Width": "181",
+                "Height": "163"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk1/Top_Thumb.png",
+              "Metadata": [
+                {
+                  "Id": "HaloOffset",
+                  "Value": "-390"
+                },
+                {
+                  "Id": "HaloSize",
+                  "Value": "960x960"
+                }
+              ]
+            },
+            {
+              "Id": "Desk3Top",
+              "Caption": "Desk 3 Top",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk3/Top_Color.png",
+              "Size": {
+                "Width": "338",
+                "Height": "168"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk3/Top_Thumb.png",
+              "Metadata": [
+                {
+                  "Id": "HaloOffset",
+                  "Value": "-370"
+                },
+                {
+                  "Id": "HaloSize",
+                  "Value": "960x960"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "MiddleBitmaps",
+          "List": [
+            {
+              "Id": "Desk9Middle",
+              "Caption": "Desk 9 Middle",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk9/Middle_Color.png",
+              "Size": {
+                "Width": "186",
+                "Height": "27"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk9/Middle_Thumb.png"
+            },
+            {
+              "Id": "Desk8Middle",
+              "Caption": "Desk 8 Middle",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk8/Middle_Color.png",
+              "Size": {
+                "Width": "9",
+                "Height": "20"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk8/Middle_Thumb.png"
+            },
+            {
+              "Id": "Desk6Middle",
+              "Caption": "Desk 6 Middle",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk6/Middle_Color.png",
+              "Size": {
+                "Width": "17",
+                "Height": "13"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk6/Middle_Thumb.png"
+            },
+            {
+              "Id": "Desk7Middle",
+              "Caption": "Desk 7 Middle",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk7/Middle_Color.png",
+              "Size": {
+                "Width": "10",
+                "Height": "10"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk7/Middle_Thumb.png"
+            },
+            {
+              "Id": "Desk4Middle",
+              "Caption": "Desk 4 Middle",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk4/Middle_Color.png",
+              "Size": {
+                "Width": "12",
+                "Height": "35"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk4/Middle_Thumb.png"
+            },
+            {
+              "Id": "Desk5Middle",
+              "Caption": "Desk 5 Middle",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk5/Middle_Color.png",
+              "Size": {
+                "Width": "24",
+                "Height": "7"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk5/Middle_Thumb.png"
+            },
+            {
+              "Id": "Desk1Middle",
+              "Caption": "Desk 1 Middle",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk1/Middle_Color.png",
+              "Size": {
+                "Width": "18",
+                "Height": "18"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk1/Middle_Thumb.png"
+            },
+            {
+              "Id": "Desk3Middle",
+              "Caption": "Desk 3 Middle",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk3/Middle_Color.png",
+              "Size": {
+                "Width": "24",
+                "Height": "17"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk3/Middle_Thumb.png"
+            },
+            {
+              "Id": "Desk2Middle",
+              "Caption": "Desk 2 Middle",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk2C/Middle_Color.png",
+              "Size": {
+                "Width": "189",
+                "Height": "30"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk2C/Middle_Thumb.png",
+              "Metadata": [
+                {
+                  "Id": "EngraveOffset",
+                  "Value": "5"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "BottomBitmaps",
+          "List": [
+            {
+              "Id": "Desk9Bottom",
+              "Caption": "Desk 9 Bottom",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk9/Bottom_Color.png",
+              "Size": {
+                "Width": "700",
+                "Height": "182"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk9/Bottom_Thumb.png"
+            },
+            {
+              "Id": "Desk8Bottom",
+              "Caption": "Desk 8 Bottom",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk8/Bottom_Color.png",
+              "Size": {
+                "Width": "594",
+                "Height": "195"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk8/Bottom_Thumb.png"
+            },
+            {
+              "Id": "Desk6Bottom",
+              "Caption": "Desk 6 Bottom",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk6/Bottom_Color.png",
+              "Size": {
+                "Width": "611",
+                "Height": "226"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk6/Bottom_Thumb.png"
+            },
+            {
+              "Id": "Desk7Bottom",
+              "Caption": "Desk 7 Bottom",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk7/Bottom_Color.png",
+              "Size": {
+                "Width": "566",
+                "Height": "205"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk7/Bottom_Thumb.png"
+            },
+            {
+              "Id": "Desk4Bottom",
+              "Caption": "Desk 4 Bottom",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk4/Bottom_Color.png",
+              "Size": {
+                "Width": "639",
+                "Height": "216"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk4/Bottom_Thumb.png"
+            },
+            {
+              "Id": "Desk5Bottom",
+              "Caption": "Desk 5 Bottom",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk5/Bottom_Color.png",
+              "Size": {
+                "Width": "665",
+                "Height": "214"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk5/Bottom_Thumb.png"
+            },
+            {
+              "Id": "Desk1Bottom",
+              "Caption": "Desk 1 Bottom",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk1/Bottom_Color.png",
+              "Size": {
+                "Width": "492",
+                "Height": "206"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk1/Bottom_Thumb.png"
+            },
+            {
+              "Id": "Desk3Bottom",
+              "Caption": "Desk 3 Bottom",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk3/Bottom_Color.png",
+              "Size": {
+                "Width": "504",
+                "Height": "215"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk3/Bottom_Thumb.png"
+            },
+            {
+              "Id": "Desk10Bottom",
+              "Caption": "Desk 10 Bottom",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Desk10/Bottom_Color.png",
+              "Size": {
+                "Width": "639",
+                "Height": "216"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk10/Bottom_Thumb.png"
+            }
+          ]
+        }
+      ],
+      "DefaultDevice": {
+        "Id": "DeviceA",
+        "Category": "DeskLamp",
+        "Caption": "Table Lamp",
+        "Thumbnail": "ms-appx:///Assets/Products/Lamp_16_1.png",
+        "Room": "RoomA",
+        "Properties": [
+          {
+            "Id": "LightsOn",
+            "Type": "PropertyBool",
+            "Caption": "Lights",
+            "Value": "true",
+            "IsVisibleInProductEditor": "true",
+            "IsVisibleInMyLights": "true"
+          },
+          {
+            "Id": "Brightness",
+            "Type": "PropertyNumber",
+            "Caption": "Brightness",
+            "Value": "700",
+            "SmallChange": "1",
+            "LargeChange": "10",
+            "Min": "0",
+            "Max": "1500",
+            "StepValue": "1",
+            "IsVisibleInProductEditor": "true",
+            "IsVisibleInMyLights": "true"
+          },
+          {
+            "Id": "LightBulbColor",
+            "Type": "PropertyColorPalette",
+            "Caption": "Bulb Color",
+            "Value": "#FFFAEBD7",
+            "CustomColor": "#FF800080",
+            "IsVisibleInProductEditor": "true",
+            "IsVisibleInMyLights": "true",
+            "Palette": [ "#ffffffff", "#ffcd6767", "#ff8bacb3", "#ffcd975d", "#ffc3b870", "#ff6cc1c3", "#ff7b7ecf", "#ffa36fc3", "#ffc36aa8", "#ffb3b294", "#ffc2acb6" ]
+          },
+          {
+            "Id": "TopBitmap",
+            "Type": "PropertyBitmapPicker",
+            "Caption": "Top",
+            "Value": "Desk4Top",
+            "IsVisibleInProductEditor": "true",
+            "IsVisibleInMyLights": "false",
+            "Bitmaps": "TopBitmaps"
+          },
+          {
+            "Id": "MiddleBitmap",
+            "Type": "PropertyBitmapPicker",
+            "Caption": "Middle",
+            "Value": "Desk8Middle",
+            "IsVisibleInProductEditor": "true",
+            "IsVisibleInMyLights": "false",
+            "Bitmaps": "MiddleBitmaps"
+          },
+          {
+            "Id": "BottomBitmap",
+            "Type": "PropertyBitmapPicker",
+            "Caption": "Bottom",
+            "Value": "Desk8Bottom",
+            "IsVisibleInProductEditor": "true",
+            "IsVisibleInMyLights": "false",
+            "Bitmaps": "BottomBitmaps"
+          },
+          {
+            "Id": "Engraving",
+            "Type": "PropertyString",
+            "Caption": "Engrave",
+            "Value": "",
+            "IsVisibleInProductEditor": "true",
+            "IsVisibleInMyLights": "false"
+          }
+        ]
+      }
+    },
+    {
+      "Id": "HangingLamp",
+      "Thumbnail": "ms-appx:///Assets/Products/HangingLamp.png",
+      "ThumbnailHeight": 460,
+      "ThumbnailTopMargin": 80,
+      "Caption": "Pendant Lamps",
+      "ShowDeviceShelf": "false",
+      "ShelfOffset": {
+        "X": "0",
+        "Y": "0",
+        "Z": "0"
+      },
+      "DeviceOffset": {
+        "X": "0",
+        "Y": "-388",
+        "Z": "-200"
+      },
+      "SpotlightOffset": {
+        "X": "0",
+        "Y": "0",
+        "Z": "0"
+      },
+      "Spotlight1Offset": {
+        "X": "0",
+        "Y": "0",
+        "Z": "0"
+      },
+      "PointlightOffset": {
+        "X": "0",
+        "Y": "0",
+        "Z": "0"
+      },
+      "SharedBitmapLists": [
+        {
+          "Id": "TopBitmaps",
+          "List": [
+            {
+              "Id": "Hang1Top",
+              "Caption": "Hanging 1 Top",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Hang1/Top_Color.png",
+              "Size": {
+                "Width": "466",
+                "Height": "723"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Hang1/Top_Thumb.png",
+              "Metadata": [
+                {
+                  "Id": "HaloOffset",
+                  "Value": "-50"
+                },
+                {
+                  "Id": "HaloSize",
+                  "Value": "1920x1920"
+                }
+              ]
+            },
+            {
+              "Id": "Hang2Top",
+              "Caption": "Hanging 2 Top",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Hang2/Top_Color.png",
+              "Size": {
+                "Width": "446",
+                "Height": "723"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Hang2/Top_Thumb.png",
+              "Metadata": [
+                {
+                  "Id": "HaloOffset",
+                  "Value": "-100"
+                },
+                {
+                  "Id": "HaloSize",
+                  "Value": "1920x1920"
+                }
+              ]
+            },
+            {
+              "Id": "Hang3Top",
+              "Caption": "Hanging 3 Top",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Hang3/Top_Color.png",
+              "Size": {
+                "Width": "390",
+                "Height": "723"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Hang3/Top_Thumb.png",
+              "Metadata": [
+                {
+                  "Id": "HaloOffset",
+                  "Value": "-340"
+                },
+                {
+                  "Id": "HaloSize",
+                  "Value": "1920x1920"
+                }
+              ]
+            },
+            {
+              "Id": "Hang4Top",
+              "Caption": "Hanging 4 Top",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Hang4/Top_Color.png",
+              "Size": {
+                "Width": "238",
+                "Height": "723"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Hang4/Top_Thumb.png",
+              "Metadata": [
+                {
+                  "Id": "HaloOffset",
+                  "Value": "-260"
+                },
+                {
+                  "Id": "HaloSize",
+                  "Value": "1920x1920"
+                }
+              ]
+            },
+            {
+              "Id": "Hang5Top",
+              "Caption": "Hanging 5 Top",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Hang5/Top_Color.png",
+              "Size": {
+                "Width": "206",
+                "Height": "723"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Hang5/Top_Thumb.png",
+              "Metadata": [
+                {
+                  "Id": "HaloOffset",
+                  "Value": "-390"
+                },
+                {
+                  "Id": "HaloSize",
+                  "Value": "1920x1920"
+                }
+              ]
+            },
+            {
+              "Id": "Hang6Top",
+              "Caption": "Hanging 6 Top",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Hang6/Top_Color.png",
+              "Size": {
+                "Width": "170",
+                "Height": "723"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Hang6/Top_Thumb.png",
+              "Metadata": [
+                {
+                  "Id": "HaloOffset",
+                  "Value": "-50"
+                },
+                {
+                  "Id": "HaloSize",
+                  "Value": "1920x1920"
+                }
+              ]
+            },
+            {
+              "Id": "Hang7Top",
+              "Caption": "Hanging 7 Top",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Hang7/Top_Color.png",
+              "Size": {
+                "Width": "466",
+                "Height": "723"
+              },
+              "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Hang7/Top_Thumb.png",
+              "Metadata": [
+                {
+                  "Id": "HaloOffset",
+                  "Value": "-430"
+                },
+                {
+                  "Id": "HaloSize",
+                  "Value": "1920x1920"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Id": "MiddleBitmaps",
+          "List": [
+            {
+              "Id": "Hang1Middle",
+              "Caption": "Hanging 1 Middle",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Blank.png",
+              "Size": {
+                "Width": "1",
+                "Height": "100"
+              }
+            }
+          ]
+        },
+        {
+          "Id": "BottomBitmaps",
+          "List": [
+            {
+              "Id": "Hang1Bottom",
+              "Caption": "Hanging 1 Bottom",
+              "Path": "ms-appx:///Assets/DemoAssets/Lamps/Blank.png",
+              "Size": {
+                "Width": "1",
+                "Height": "100"
+              }
+            }
+          ]
+        }
+      ],
+      "DefaultDevice": {
+        "Id": "DeviceA",
+        "Category": "HangingLamp",
+        "Caption": "Pendant Lamp",
+        "Thumbnail": "ms-appx:///Assets/Products/Hanging.png",
+        "Room": "RoomA",
+        "Properties": [
+          {
+            "Id": "LightsOn",
+            "Type": "PropertyBool",
+            "Caption": "Lights",
+            "Value": "true",
+            "IsVisibleInProductEditor": "true",
+            "IsVisibleInMyLights": "true"
+          },
+          {
+            "Id": "Brightness",
+            "Type": "PropertyNumber",
+            "Caption": "Brightness",
+            "Value": "700",
+            "SmallChange": "1",
+            "LargeChange": "10",
+            "Min": "0",
+            "Max": "1500",
+            "StepValue": "1",
+            "IsVisibleInProductEditor": "true",
+            "IsVisibleInMyLights": "true"
+          },
+          {
+            "Id": "LightBulbColor",
+            "Type": "PropertyColorPalette",
+            "Caption": "Bulb Color",
+            "Value": "#FFFAEBD7",
+            "CustomColor": "#FF800080",
+            "IsVisibleInProductEditor": "true",
+            "IsVisibleInMyLights": "true",
+            "Palette": [ "#ffffffff", "#ffcd6767", "#ff8bacb3", "#ffcd975d", "#ffc3b870", "#ff6cc1c3", "#ff7b7ecf", "#ffa36fc3", "#ffc36aa8", "#ffb3b294", "#ffc2acb6" ]
+          },
+          {
+            "Id": "TopBitmap",
+            "Type": "PropertyBitmapPicker",
+            "Caption": "Top",
+            "Value": "Hang2Top",
+            "IsVisibleInProductEditor": "true",
+            "IsVisibleInMyLights": "false",
+            "Bitmaps": "TopBitmaps"
+          },
+          {
+            "Id": "MiddleBitmap",
+            "Type": "PropertyBitmapPicker",
+            "Caption": "Middle",
+            "Value": "Hang1Middle",
+            "IsVisibleInProductEditor": "true",
+            "IsVisibleInMyLights": "false",
+            "Bitmaps": "MiddleBitmaps"
+          },
+          {
+            "Id": "BottomBitmap",
+            "Type": "PropertyBitmapPicker",
+            "Caption": "Bottom",
+            "Value": "Hang1Bottom",
+            "IsVisibleInProductEditor": "true",
+            "IsVisibleInMyLights": "false",
+            "Bitmaps": "BottomBitmaps"
+          },
+          {
+            "Id": "Engraving",
+            "Type": "PropertyString",
+            "Caption": "Engrave",
+            "Value": "",
+            "IsVisibleInProductEditor": "true",
+            "IsVisibleInMyLights": "false"
+          }
+        ]
+      }
+    }
+  ],
+  "Devices": [
+    {
+      "Id": "DeviceA",
+      "Category": "DeskLamp",
+      "Caption": "Desk Device A",
+      "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk9/Thumb.png",
+      "Room": "RoomA",
+      "Properties": [
+        {
+          "Id": "LightsOn",
+          "Type": "PropertyBool",
+          "Caption": "Lights",
+          "Value": "true",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "true"
+        },
+        {
+          "Id": "Brightness",
+          "Type": "PropertyNumber",
+          "Caption": "Brightness",
+          "Value": "700",
+          "SmallChange": "1",
+          "LargeChange": "10",
+          "Min": "0",
+          "Max": "1500",
+          "StepValue": "1",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "true"
+        },
+        {
+          "Id": "LightBulbColor",
+          "Type": "PropertyColorPalette",
+          "Caption": "Bulb Color",
+          "Value": "#FFFAEBD7",
+          "CustomColor": "#FF800080",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "true",
+          "Palette": [ "#ffffffff", "#ffcd6767", "#ff8bacb3", "#ffcd975d", "#ffc3b870", "#ff6cc1c3", "#ff7b7ecf", "#ffa36fc3", "#ffc36aa8", "#ffb3b294", "#ffc2acb6" ]
+        },
+        {
+          "Id": "TopBitmap",
+          "Type": "PropertyBitmapPicker",
+          "Caption": "Top",
+          "Value": "Desk9Top",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false",
+          "Bitmaps": "TopBitmaps"
+        },
+        {
+          "Id": "MiddleBitmap",
+          "Type": "PropertyBitmapPicker",
+          "Caption": "Middle",
+          "Value": "Desk9Middle",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false",
+          "Bitmaps": "MiddleBitmaps"
+        },
+        {
+          "Id": "BottomBitmap",
+          "Type": "PropertyBitmapPicker",
+          "Caption": "Bottom",
+          "Value": "Desk9Bottom",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false",
+          "Bitmaps": "BottomBitmaps"
+        },
+        {
+          "Id": "Engraving",
+          "Type": "PropertyString",
+          "Caption": "Engrave",
+          "Value": "",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false"
+        }
+      ]
+    },
+    {
+      "Id": "DeviceB",
+      "Category": "HangingLamp",
+      "Caption": "Hanging Device B",
+      "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Hang2/Thumb.png",
+      "Room": "RoomA",
+      "Properties": [
+        {
+          "Id": "LightsOn",
+          "Type": "PropertyBool",
+          "Caption": "Lights",
+          "Value": "true",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "true"
+        },
+        {
+          "Id": "Brightness",
+          "Type": "PropertyNumber",
+          "Caption": "Brightness",
+          "Value": "700",
+          "SmallChange": "1",
+          "LargeChange": "10",
+          "Min": "0",
+          "Max": "1500",
+          "StepValue": "1",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "true"
+        },
+        {
+          "Id": "LightBulbColor",
+          "Type": "PropertyColorPalette",
+          "Caption": "Bulb Color",
+          "Value": "#FFFAEBD7",
+          "CustomColor": "#FF800080",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "true",
+          "Palette": [ "#ffffffff", "#ffcd6767", "#ff8bacb3", "#ffcd975d", "#ffc3b870", "#ff6cc1c3", "#ff7b7ecf", "#ffa36fc3", "#ffc36aa8", "#ffb3b294", "#ffc2acb6" ]
+        },
+        {
+          "Id": "TopBitmap",
+          "Type": "PropertyBitmapPicker",
+          "Caption": "Top",
+          "Value": "Hang2Top",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false",
+          "Bitmaps": "TopBitmaps"
+        },
+        {
+          "Id": "MiddleBitmap",
+          "Type": "PropertyBitmapPicker",
+          "Caption": "Middle",
+          "Value": "Hang1Middle",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false",
+          "Bitmaps": "MiddleBitmaps"
+        },
+        {
+          "Id": "BottomBitmap",
+          "Type": "PropertyBitmapPicker",
+          "Caption": "Bottom",
+          "Value": "Hang1Bottom",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false",
+          "Bitmaps": "BottomBitmaps"
+        },
+        {
+          "Id": "Engraving",
+          "Type": "PropertyString",
+          "Caption": "Engrave",
+          "Value": "",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false"
+        }
+      ]
+    },
+    {
+      "Id": "DeviceC",
+      "Category": "FloorLamp",
+      "Caption": "Floor Device C",
+      "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Floor1/Thumb.png",
+      "Room": "RoomA",
+      "Properties": [
+        {
+          "Id": "LightsOn",
+          "Type": "PropertyBool",
+          "Caption": "Lights",
+          "Value": "true",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "true"
+        },
+        {
+          "Id": "Brightness",
+          "Type": "PropertyNumber",
+          "Caption": "Brightness",
+          "Value": "700",
+          "SmallChange": "1",
+          "LargeChange": "10",
+          "Min": "0",
+          "Max": "1500",
+          "StepValue": "1",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "true"
+        },
+        {
+          "Id": "LightBulbColor",
+          "Type": "PropertyColorPalette",
+          "Caption": "Bulb Color",
+          "Value": "#FFFAEBD7",
+          "CustomColor": "#FF800080",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "true",
+          "Palette": [ "#ffffffff", "#ffcd6767", "#ff8bacb3", "#ffcd975d", "#ffc3b870", "#ff6cc1c3", "#ff7b7ecf", "#ffa36fc3", "#ffc36aa8", "#ffb3b294", "#ffc2acb6" ]
+        },
+        {
+          "Id": "TopBitmap",
+          "Type": "PropertyBitmapPicker",
+          "Caption": "Top",
+          "Value": "Floor1Top",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false",
+          "Bitmaps": "TopBitmaps"
+        },
+        {
+          "Id": "MiddleBitmap",
+          "Type": "PropertyBitmapPicker",
+          "Caption": "Middle",
+          "Value": "Floor1Middle",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false",
+          "Bitmaps": "MiddleBitmaps"
+        },
+        {
+          "Id": "BottomBitmap",
+          "Type": "PropertyBitmapPicker",
+          "Caption": "Bottom",
+          "Value": "Floor1Bottom",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false",
+          "Bitmaps": "BottomBitmaps"
+        },
+        {
+          "Id": "Engraving",
+          "Type": "PropertyString",
+          "Caption": "Engrave",
+          "Value": "",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false"
+        }
+      ]
+    },
+    {
+      "Id": "DeviceD",
+      "Category": "DeskLamp",
+      "Caption": "Desk Device D",
+      "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk9/Thumb.png",
+      "Room": "RoomB",
+      "Properties": [
+        {
+          "Id": "LightsOn",
+          "Type": "PropertyBool",
+          "Caption": "Lights",
+          "Value": "true",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "true"
+        },
+        {
+          "Id": "Brightness",
+          "Type": "PropertyNumber",
+          "Caption": "Brightness",
+          "Value": "700",
+          "SmallChange": "1",
+          "LargeChange": "10",
+          "Min": "0",
+          "Max": "1500",
+          "StepValue": "1",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "true"
+        },
+        {
+          "Id": "LightBulbColor",
+          "Type": "PropertyColorPalette",
+          "Caption": "Bulb Color",
+          "Value": "#FFFAEBD7",
+          "CustomColor": "#FF800080",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "true",
+          "Palette": [ "#ffffffff", "#ffcd6767", "#ff8bacb3", "#ffcd975d", "#ffc3b870", "#ff6cc1c3", "#ff7b7ecf", "#ffa36fc3", "#ffc36aa8", "#ffb3b294", "#ffc2acb6" ]
+        },
+        {
+          "Id": "TopBitmap",
+          "Type": "PropertyBitmapPicker",
+          "Caption": "Top",
+          "Value": "Desk9Top",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false",
+          "Bitmaps": "TopBitmaps"
+        },
+        {
+          "Id": "MiddleBitmap",
+          "Type": "PropertyBitmapPicker",
+          "Caption": "Middle",
+          "Value": "Desk9Middle",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false",
+          "Bitmaps": "MiddleBitmaps"
+        },
+        {
+          "Id": "BottomBitmap",
+          "Type": "PropertyBitmapPicker",
+          "Caption": "Bottom",
+          "Value": "Desk9Bottom",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false",
+          "Bitmaps": "BottomBitmaps"
+        },
+        {
+          "Id": "Engraving",
+          "Type": "PropertyString",
+          "Caption": "Engrave",
+          "Value": "",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false"
+        }
+      ]
+    },
+    {
+      "Id": "DeviceE",
+      "Category": "HangingLamp",
+      "Caption": "E Hanging Device E",
+      "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Hang7/Thumb.png",
+      "Room": "RoomB",
+      "Properties": [
+        {
+          "Id": "LightsOn",
+          "Type": "PropertyBool",
+          "Caption": "Lights",
+          "Value": "true",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "true"
+        },
+        {
+          "Id": "Brightness",
+          "Type": "PropertyNumber",
+          "Caption": "Brightness",
+          "Value": "700",
+          "SmallChange": "1",
+          "LargeChange": "10",
+          "Min": "0",
+          "Max": "1500",
+          "StepValue": "1",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "true"
+        },
+        {
+          "Id": "LightBulbColor",
+          "Type": "PropertyColorPalette",
+          "Caption": "Bulb Color",
+          "Value": "#FFFAEBD7",
+          "CustomColor": "#FF800080",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "true",
+          "Palette": [ "#ffffffff", "#ffcd6767", "#ff8bacb3", "#ffcd975d", "#ffc3b870", "#ff6cc1c3", "#ff7b7ecf", "#ffa36fc3", "#ffc36aa8", "#ffb3b294", "#ffc2acb6" ]
+        },
+        {
+          "Id": "TopBitmap",
+          "Type": "PropertyBitmapPicker",
+          "Caption": "Top",
+          "Value": "Hang7Top",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false",
+          "Bitmaps": "TopBitmaps"
+        },
+        {
+          "Id": "MiddleBitmap",
+          "Type": "PropertyBitmapPicker",
+          "Caption": "Middle",
+          "Value": "Hang1Middle",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false",
+          "Bitmaps": "MiddleBitmaps"
+        },
+        {
+          "Id": "BottomBitmap",
+          "Type": "PropertyBitmapPicker",
+          "Caption": "Bottom",
+          "Value": "Hang1Bottom",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false",
+          "Bitmaps": "BottomBitmaps"
+        },
+        {
+          "Id": "Engraving",
+          "Type": "PropertyString",
+          "Caption": "Engrave",
+          "Value": "",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false"
+        }
+      ]
+    },
+    {
+      "Id": "DeviceF",
+      "Category": "DeskLamp",
+      "Caption": "F Desk Device F",
+      "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk7/Thumb.png",
+      "Room": "RoomB",
+      "Properties": [
+        {
+          "Id": "LightsOn",
+          "Type": "PropertyBool",
+          "Caption": "Lights",
+          "Value": "true",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "true"
+        },
+        {
+          "Id": "Brightness",
+          "Type": "PropertyNumber",
+          "Caption": "Brightness",
+          "Value": "700",
+          "SmallChange": "1",
+          "LargeChange": "10",
+          "Min": "0",
+          "Max": "1500",
+          "StepValue": "1",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "true"
+        },
+        {
+          "Id": "LightBulbColor",
+          "Type": "PropertyColorPalette",
+          "Caption": "Bulb Color",
+          "Value": "#FFFAEBD7",
+          "CustomColor": "#FF800080",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "true",
+          "Palette": [ "#ffffffff", "#ffcd6767", "#ff8bacb3", "#ffcd975d", "#ffc3b870", "#ff6cc1c3", "#ff7b7ecf", "#ffa36fc3", "#ffc36aa8", "#ffb3b294", "#ffc2acb6" ]
+        },
+        {
+          "Id": "TopBitmap",
+          "Type": "PropertyBitmapPicker",
+          "Caption": "Top",
+          "Value": "Desk7Top",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false",
+          "Bitmaps": "TopBitmaps"
+        },
+        {
+          "Id": "MiddleBitmap",
+          "Type": "PropertyBitmapPicker",
+          "Caption": "Middle",
+          "Value": "Desk7Middle",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false",
+          "Bitmaps": "MiddleBitmaps"
+        },
+        {
+          "Id": "BottomBitmap",
+          "Type": "PropertyBitmapPicker",
+          "Caption": "Bottom",
+          "Value": "Desk7Bottom",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false",
+          "Bitmaps": "BottomBitmaps"
+        },
+        {
+          "Id": "Engraving",
+          "Type": "PropertyString",
+          "Caption": "Engrave",
+          "Value": "",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false"
+        }
+      ]
+    },
+    {
+      "Id": "DeviceG",
+      "Category": "DeskLamp",
+      "Caption": "G Desk Device G",
+      "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk7/Thumb.png",
+      "Room": "RoomB",
+      "Properties": [
+        {
+          "Id": "LightsOn",
+          "Type": "PropertyBool",
+          "Caption": "Lights",
+          "Value": "true",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "true"
+        },
+        {
+          "Id": "Brightness",
+          "Type": "PropertyNumber",
+          "Caption": "Brightness",
+          "Value": "700",
+          "SmallChange": "1",
+          "LargeChange": "10",
+          "Min": "0",
+          "Max": "1500",
+          "StepValue": "1",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "true"
+        },
+        {
+          "Id": "LightBulbColor",
+          "Type": "PropertyColorPalette",
+          "Caption": "Bulb Color",
+          "Value": "#FFFAEBD7",
+          "CustomColor": "#FF800080",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "true",
+          "Palette": [ "#ffffffff", "#ffcd6767", "#ff8bacb3", "#ffcd975d", "#ffc3b870", "#ff6cc1c3", "#ff7b7ecf", "#ffa36fc3", "#ffc36aa8", "#ffb3b294", "#ffc2acb6" ]
+        },
+        {
+          "Id": "TopBitmap",
+          "Type": "PropertyBitmapPicker",
+          "Caption": "Top",
+          "Value": "Desk7Top",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false",
+          "Bitmaps": "TopBitmaps"
+        },
+        {
+          "Id": "MiddleBitmap",
+          "Type": "PropertyBitmapPicker",
+          "Caption": "Middle",
+          "Value": "Desk7Middle",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false",
+          "Bitmaps": "MiddleBitmaps"
+        },
+        {
+          "Id": "BottomBitmap",
+          "Type": "PropertyBitmapPicker",
+          "Caption": "Bottom",
+          "Value": "Desk7Bottom",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false",
+          "Bitmaps": "BottomBitmaps"
+        },
+        {
+          "Id": "Engraving",
+          "Type": "PropertyString",
+          "Caption": "Engrave",
+          "Value": "",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false"
+        }
+      ]
+    },
+    {
+      "Id": "DeviceH",
+      "Category": "DeskLamp",
+      "Caption": "Desk Device H",
+      "Thumbnail": "ms-appx:///Assets/DemoAssets/Lamps/Desk3/Thumb.png",
+      "Room": "RoomC",
+      "Properties": [
+        {
+          "Id": "LightsOn",
+          "Type": "PropertyBool",
+          "Caption": "Lights",
+          "Value": "true",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "true"
+        },
+        {
+          "Id": "Brightness",
+          "Type": "PropertyNumber",
+          "Caption": "Brightness",
+          "Value": "700",
+          "SmallChange": "1",
+          "LargeChange": "10",
+          "Min": "0",
+          "Max": "1500",
+          "StepValue": "1",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "true"
+        },
+        {
+          "Id": "LightBulbColor",
+          "Type": "PropertyColorPalette",
+          "Caption": "Bulb Color",
+          "Value": "#FFFAEBD7",
+          "CustomColor": "#FF800080",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "true",
+          "Palette": [ "#ffffffff", "#ffcd6767", "#ff8bacb3", "#ffcd975d", "#ffc3b870", "#ff6cc1c3", "#ff7b7ecf", "#ffa36fc3", "#ffc36aa8", "#ffb3b294", "#ffc2acb6" ]
+        },
+        {
+          "Id": "TopBitmap",
+          "Type": "PropertyBitmapPicker",
+          "Caption": "Top",
+          "Value": "Desk3Top",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false",
+          "Bitmaps": "TopBitmaps"
+        },
+        {
+          "Id": "MiddleBitmap",
+          "Type": "PropertyBitmapPicker",
+          "Caption": "Middle",
+          "Value": "Desk3Middle",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false",
+          "Bitmaps": "MiddleBitmaps"
+        },
+        {
+          "Id": "BottomBitmap",
+          "Type": "PropertyBitmapPicker",
+          "Caption": "Bottom",
+          "Value": "Desk3Bottom",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false",
+          "Bitmaps": "BottomBitmaps"
+        },
+        {
+          "Id": "Engraving",
+          "Type": "PropertyString",
+          "Caption": "Engrave",
+          "Value": "",
+          "IsVisibleInProductEditor": "true",
+          "IsVisibleInMyLights": "false"
+        }
+      ]
+    }
+  ],
+  "Products": [
+    {
+      "Id": "Product01",
+      "Category": "HangingLamp",
+      "Caption": "Alpine",
+      "Price": 399,
+      "Thumbnail": "ms-appx:///Assets/Store/ceiling_32.png",
+      "ImageHeight": 400,
+      "ImageTopMargin": 0,
+      "ItemMinWidth": 262
+    },
+    {
+      "Id": "Product02",
+      "Category": "HangingLamp",
+      "Caption": "Adatum",
+      "Price": 399,
+      "Thumbnail": "ms-appx:///Assets/Store/ceiling_38.png",
+      "ImageHeight": 400,
+      "ImageTopMargin": 0,
+      "ItemMinWidth": 280
+    },
+    {
+      "Id": "Product03",
+      "Category": "HangingLamp",
+      "Caption": "Fincher",
+      "Price": 399,
+      "Thumbnail": "ms-appx:///Assets/Store/ceiling_39.png",
+      "ImageHeight": 460,
+      "ImageTopMargin": -40,
+      "ItemMinWidth": 340
+    },
+    {
+      "Id": "Product04",
+      "Category": "FloorLamp",
+      "Caption": "Lamna",
+      "Price": 399,
+      "Thumbnail": "ms-appx:///Assets/Store/floor_16_poly.png",
+      "ImageHeight": 320,
+      "ImageTopMargin": 0,
+      "ItemMinWidth": 300
+    },
+    {
+      "Id": "Product05",
+      "Category": "FloorLamp",
+      "Caption": "Adatum",
+      "Price": 399,
+      "Thumbnail": "ms-appx:///Assets/Store/floor_16_short_whitefabric.png",
+      "ImageHeight": 380,
+      "ImageTopMargin": 0,
+      "ItemMinWidth": 300
+    },
+    {
+      "Id": "Product06",
+      "Category": "DeskLamp",
+      "Caption": "Wingtip",
+      "Price": 399,
+      "Thumbnail": "ms-appx:///Assets/Store/table_34.png",
+      "ImageHeight": 460,
+      "ImageTopMargin": 80,
+      "ItemMinWidth": 340
+    },
+    {
+      "Id": "Product07",
+      "Category": "DeskLamp",
+      "Caption": "Lucerne",
+      "Price": 399,
+      "Thumbnail": "ms-appx:///Assets/Store/table_35.png",
+      "ImageHeight": 460,
+      "ImageTopMargin": 80,
+      "ItemMinWidth": 340
+    },
+    {
+      "Id": "Product08",
+      "Category": "DeskLamp",
+      "Caption": "Munson",
+      "Price": 399,
+      "Thumbnail": "ms-appx:///Assets/Store/table_36.png",
+      "ImageHeight": 440,
+      "ImageTopMargin": 40,
+      "ItemMinWidth": 300
+    },
+    {
+      "Id": "Product09",
+      "Category": "DeskLamp",
+      "Caption": "Bellows",
+      "Price": 399,
+      "Thumbnail": "ms-appx:///Assets/Store/table_36_silverbase.png",
+      "ImageHeight": 380,
+      "ImageTopMargin": 20,
+      "ItemMinWidth": 280
+    },
+    {
+      "Id": "Product10",
+      "Category": "DeskLamp",
+      "Caption": "Lamna",
+      "Price": 499,
+      "Thumbnail": "ms-appx:///Assets/Store/table_44.png",
+      "ImageHeight": 450,
+      "ImageTopMargin": 58,
+      "ItemMinWidth": 280
+    }
+  ]
+}

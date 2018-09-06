@@ -1,0 +1,182 @@
+﻿<!--
+    Copyright (c) Microsoft Corporation. All rights reserved.
+    Licensed under the MIT License.
+-->
+<Application
+    x:Class="VanArsdel.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VanArsdel">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+                <ResourceDictionary>
+                    <ResourceDictionary.ThemeDictionaries>
+                        <ResourceDictionary x:Key="Default">
+                            <SolidColorBrush x:Key="OuterFrameBackgroundBrush" Color="#FFBAB8B6" />
+
+                            <SolidColorBrush x:Key="EditorBackgroundBrush" Color="#FF7E8790" />
+                            <SolidColorBrush x:Key="EditorTopStrokeBrush" Color="#FF978F96" />
+
+                            <StaticResource x:Key="PropertyInspectorPresetDividerBrush" ResourceKey="SystemControlBackgroundListLowBrush" />
+                            <StaticResource x:Key="PropertyInspectorBackgroundBrush" ResourceKey="SystemControlBackgroundAltHighBrush" />
+                            
+                            <SolidColorBrush x:Key="ProductConfigurationItemStyleBorderBrush" Color="#1A000000" />
+                            <SolidColorBrush x:Key="ProductConfigurationItemStyleBackgroundBrush" Color="#66FFFFFF" />
+                            <SolidColorBrush x:Key="ProductConfigurationItemTemplateForegroundBrush" Color="#CC000000" />
+                            <SolidColorBrush x:Key="ProductConfigurationItemTemplateSelectedForegroundBrush" Color="#FF000000" />
+
+                            <StaticResource x:Key="NavPaneBackgroundBrush" ResourceKey="SystemControlBackgroundChromeMediumLowBrush" />
+                            <StaticResource x:Key="NavPaneDividerBrush" ResourceKey="SystemControlBackgroundListLowBrush" />
+
+                            <SolidColorBrush x:Key="StorePageTextBrush" Color="#FF000000" />
+                            <SolidColorBrush x:Key="ProductItemBackgroundBrush" Color="{StaticResource SystemAltHighColor}" />
+
+                            <SolidColorBrush x:Key="CategorySelectorBackdropBrush" Color="#CC000000" />
+                            <SolidColorBrush x:Key="CategorySelectorForegroundBrush" Color="#FFFFFFFF" />
+
+                            <SolidColorBrush x:Key="PurchaseBackdropBrush" Color="{StaticResource SystemAltHighColor}" />
+
+                            <SolidColorBrush x:Key="SwipeItemRenameBackgroundBrush" Color="#FF3A3742" />
+                            <SolidColorBrush x:Key="SwipeItemRenameForegroundBrush" Color="#FFFFFFFF" />
+                            <SolidColorBrush x:Key="SwipeItemRemoveBackgroundBrush" Color="#FFE81123" />
+                            <SolidColorBrush x:Key="SwipeItemRemoveForegroundBrush" Color="#FFFFFFFF" />
+                        </ResourceDictionary>
+                        <ResourceDictionary x:Key="Light">
+                            <SolidColorBrush x:Key="OuterFrameBackgroundBrush" Color="#FFBAB8B6" />
+                            
+                            <SolidColorBrush x:Key="EditorBackgroundBrush" Color="#FF7E8790" />
+                            <SolidColorBrush x:Key="EditorTopStrokeBrush" Color="#FF978F96" />
+
+                            <StaticResource x:Key="PropertyInspectorPresetDividerBrush" ResourceKey="SystemControlBackgroundListLowBrush" />
+                            <StaticResource x:Key="PropertyInspectorBackgroundBrush" ResourceKey="SystemControlBackgroundAltHighBrush" />
+
+                            <SolidColorBrush x:Key="ProductConfigurationItemStyleBorderBrush" Color="#1AFFFFFF" />
+                            <SolidColorBrush x:Key="ProductConfigurationItemStyleBackgroundBrush" Color="#66000000" />
+                            <SolidColorBrush x:Key="ProductConfigurationItemTemplateForegroundBrush" Color="#CCFFFFFF" />
+                            <SolidColorBrush x:Key="ProductConfigurationItemTemplateSelectedForegroundBrush" Color="#FFFFFFFF" />
+
+                            <StaticResource x:Key="NavPaneBackgroundBrush" ResourceKey="SystemControlBackgroundChromeMediumLowBrush" />
+                            <StaticResource x:Key="NavPaneDividerBrush" ResourceKey="SystemControlBackgroundListLowBrush" />
+
+                            <SolidColorBrush x:Key="StorePageTextBrush" Color="#FF000000" />
+                            <SolidColorBrush x:Key="ProductItemBackgroundBrush" Color="{StaticResource SystemAltHighColor}" />
+
+                            <SolidColorBrush x:Key="CategorySelectorBackdropBrush" Color="#CC000000" />
+                            <SolidColorBrush x:Key="CategorySelectorForegroundBrush" Color="#FFFFFFFF" />
+
+                            <SolidColorBrush x:Key="PurchaseBackdropBrush" Color="{StaticResource SystemAltHighColor}" />
+
+                            <SolidColorBrush x:Key="SwipeItemRenameBackgroundBrush" Color="#FF3A3742" />
+                            <SolidColorBrush x:Key="SwipeItemRenameForegroundBrush" Color="#FFFFFFFF" />
+                            <SolidColorBrush x:Key="SwipeItemRemoveBackgroundBrush" Color="#FFE81123" />
+                            <SolidColorBrush x:Key="SwipeItemRemoveForegroundBrush" Color="#FFFFFFFF" />
+                        </ResourceDictionary>
+                        <ResourceDictionary x:Key="HighContrast">
+                            <SolidColorBrush x:Key="OuterFrameBackgroundBrush" Color="{ThemeResource SystemColorWindowColor}" />
+                            
+                            <SolidColorBrush x:Key="EditorBackgroundBrush" Color="{ThemeResource SystemColorWindowColor}" />
+                            <SolidColorBrush x:Key="EditorTopStrokeBrush" Color="{ThemeResource SystemColorWindowTextColor}" />
+
+                            <SolidColorBrush x:Key="PropertyInspectorPresetDividerBrush" Color="{ThemeResource SystemColorButtonFaceColor}" />
+                            <SolidColorBrush x:Key="PropertyInspectorBackgroundBrush" Color="{ThemeResource SystemColorWindowColor}" />
+
+                            <SolidColorBrush x:Key="ProductConfigurationItemStyleBorderBrush" Color="{ThemeResource SystemColorButtonFaceColor}" />
+                            <SolidColorBrush x:Key="ProductConfigurationItemStyleBackgroundBrush" Color="{ThemeResource SystemColorWindowColor}" />
+                            <SolidColorBrush x:Key="ProductConfigurationItemTemplateForegroundBrush" Color="{ThemeResource SystemColorButtonTextColor}" />
+                            <SolidColorBrush x:Key="ProductConfigurationItemTemplateSelectedForegroundBrush" Color="{ThemeResource SystemColorButtonTextColor}" />
+
+                            <SolidColorBrush x:Key="NavPaneBackgroundBrush" Color="{ThemeResource SystemColorWindowColor}" />
+                            <SolidColorBrush x:Key="NavPaneDividerBrush" Color="{ThemeResource SystemColorButtonFaceColor}" />
+
+                            <SolidColorBrush x:Key="StorePageTextBrush" Color="{ThemeResource SystemColorWindowTextColor}" />
+                            <SolidColorBrush x:Key="ProductItemBackgroundBrush" Color="{ThemeResource SystemColorButtonFaceColor}" />
+
+                            <SolidColorBrush x:Key="CategorySelectorBackdropBrush" Color="{ThemeResource SystemColorWindowColor}" />
+                            <SolidColorBrush x:Key="CategorySelectorForegroundBrush" Color="{ThemeResource SystemColorWindowTextColor}" />
+
+                            <SolidColorBrush x:Key="PurchaseBackdropBrush" Color="{ThemeResource SystemColorWindowColor}" />
+
+                            <SolidColorBrush x:Key="SwipeItemRenameBackgroundBrush" Color="{ThemeResource SystemColorButtonFaceColor}" />
+                            <SolidColorBrush x:Key="SwipeItemRenameForegroundBrush" Color="{ThemeResource SystemColorButtonTextColor}" />
+                            <SolidColorBrush x:Key="SwipeItemRemoveBackgroundBrush" Color="{ThemeResource SystemColorButtonFaceColor}" />
+                            <SolidColorBrush x:Key="SwipeItemRemoveForegroundBrush" Color="{ThemeResource SystemColorButtonTextColor}" />
+                        </ResourceDictionary>
+                    </ResourceDictionary.ThemeDictionaries>
+
+                    <Style TargetType="FlyoutPresenter">
+                        <Setter Property="Background" Value="{ThemeResource SystemControlAcrylicElementBrush}" />
+                    </Style>
+
+                    <Style TargetType="MenuFlyoutPresenter">
+                        <Setter Property="Background" Value="{ThemeResource SystemControlAcrylicElementBrush}" />
+                    </Style>
+
+                    <Style x:Key="HitboxButtonStyle" TargetType="Button">
+                        <Setter Property="Background" Value="Transparent" />
+                        <Setter Property="Foreground" Value="{ThemeResource ButtonForeground}" />
+                        <Setter Property="BorderBrush" Value="Transparent" />
+                        <Setter Property="BorderThickness" Value="0" />
+                        <Setter Property="Padding" Value="0" />
+                        <Setter Property="HorizontalAlignment" Value="Stretch" />
+                        <Setter Property="VerticalAlignment" Value="Stretch" />
+                        <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
+                        <Setter Property="FontWeight" Value="Normal" />
+                        <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}" />
+                        <Setter Property="UseSystemFocusVisuals" Value="True" />
+                        <Setter Property="FocusVisualMargin" Value="-2" />
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                        <Setter Property="VerticalContentAlignment" Value="Stretch" />
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="Button">
+                                    <Grid x:Name="RootGrid" Background="{TemplateBinding Background}">
+
+                                        <VisualStateManager.VisualStateGroups>
+                                            <VisualStateGroup x:Name="CommonStates">
+                                                <VisualState x:Name="Normal" />
+
+                                                <VisualState x:Name="PointerOver">
+                                                    <VisualState.Setters>
+                                                        <Setter Target="ContentPresenter.Foreground" Value="{ThemeResource ButtonForegroundPointerOver}" />
+                                                    </VisualState.Setters>
+                                                </VisualState>
+
+                                                <VisualState x:Name="Pressed">
+                                                    <VisualState.Setters>
+                                                        <Setter Target="ContentPresenter.Foreground" Value="{ThemeResource ButtonForegroundPressed}" />
+                                                    </VisualState.Setters>
+                                                </VisualState>
+
+                                                <VisualState x:Name="Disabled">
+                                                    <VisualState.Setters>
+                                                        <Setter Target="ContentPresenter.Foreground" Value="{ThemeResource ButtonForegroundDisabled}" />
+                                                    </VisualState.Setters>
+                                                </VisualState>
+                                            </VisualStateGroup>
+
+                                        </VisualStateManager.VisualStateGroups>
+                                        <ContentPresenter
+                                            x:Name="ContentPresenter"
+                                            Padding="{TemplateBinding Padding}"
+                                            HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                            VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                                            AutomationProperties.AccessibilityView="Raw"
+                                            BorderBrush="{TemplateBinding BorderBrush}"
+                                            BorderThickness="{TemplateBinding BorderThickness}"
+                                            Content="{TemplateBinding Content}"
+                                            ContentTemplate="{TemplateBinding ContentTemplate}"
+                                            ContentTransitions="{TemplateBinding ContentTransitions}" />
+                                    </Grid>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+
+
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

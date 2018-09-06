@@ -1,0 +1,632 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{40668147-C39B-40FE-8AB5-852DB2E19665}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VanArsdel</RootNamespace>
+    <AssemblyName>VanArsdel</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.17744.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.17744.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
+    <PackageCertificateKeyFile>VanArsdel_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxPackageDir>E:\packages</AppxPackageDir>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x86|x64</AppxBundlePlatforms>
+    <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
+    <PackageCertificateThumbprint>5C06A8C2B287CF5EE8EE093FBDF340E9527F53E6</PackageCertificateThumbprint>
+    <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+    <AppInstallerUpdateFrequency>1</AppInstallerUpdateFrequency>
+    <AppInstallerCheckForUpdateFrequency>OnApplicationRun</AppInstallerCheckForUpdateFrequency>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableTypeInfoReflection>false</EnableTypeInfoReflection>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Controls\ColorPaletteToggleButton.cs" />
+    <Compile Include="Controls\LampControl.xaml.cs">
+      <DependentUpon>LampControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PresetToggleButton.cs" />
+    <Compile Include="IExitTransition.cs" />
+    <Compile Include="Model\Devices\DeviceCategory.cs" />
+    <Compile Include="Model\Devices\PropertyMetadataItem.cs" />
+    <Compile Include="Model\Devices\PropertyString.cs" />
+    <Compile Include="OuterNav\NavItemContainerStyleSelector.cs" />
+    <Compile Include="OuterNav\NavItemTemplateSelector.cs" />
+    <Compile Include="OuterNav\OverlayProvider.cs" />
+    <Compile Include="Store\CategeorySelectorView.xaml.cs">
+      <DependentUpon>CategeorySelectorView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Store\CompactPurchaseView.xaml.cs">
+      <DependentUpon>CompactPurchaseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Store\PurchaseViewBase.cs" />
+    <Compile Include="Store\PurchaseView.xaml.cs">
+      <DependentUpon>PurchaseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Store\PurchaseViewModel.cs" />
+    <Compile Include="Store\StorePage.xaml.cs">
+      <DependentUpon>StorePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DeviceLayout.xaml.cs">
+      <DependentUpon>DeviceLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Shadow.xaml.cs">
+      <DependentUpon>Shadow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Lights\AmbientLight.cs" />
+    <Compile Include="Lights\DistantLight.cs" />
+    <Compile Include="Lights\PointLight.cs" />
+    <Compile Include="Lights\Spotlight.cs" />
+    <Compile Include="Model\Devices\Preset.cs" />
+    <Compile Include="Model\Devices\PresetItem.cs" />
+    <Compile Include="Model\ContextActionProvider.cs" />
+    <Compile Include="Model\DeviceProvider.cs" />
+    <Compile Include="Model\Devices\Device.cs" />
+    <Compile Include="Model\Devices\Property.cs" />
+    <Compile Include="Model\Devices\PropertyBitmapPicker.cs" />
+    <Compile Include="Model\Devices\PropertyBitmapPickerItem.cs" />
+    <Compile Include="Model\Devices\PropertyBool.cs" />
+    <Compile Include="Model\Devices\PropertyColor.cs" />
+    <Compile Include="Model\Devices\PropertyColorPalette.cs" />
+    <Compile Include="Model\Devices\PropertyForwarderFactory.cs" />
+    <Compile Include="Model\Devices\PropertyList.cs" />
+    <Compile Include="Model\Devices\PropertyListItem.cs" />
+    <Compile Include="Model\Devices\PropertyNumber.cs" />
+    <Compile Include="Model\Devices\PropertyTemplateSelector.cs" />
+    <Compile Include="Model\Devices\Room.cs" />
+    <Compile Include="Main\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Main\MainViewModel.cs" />
+    <Compile Include="Model\Products\Product.cs" />
+    <Compile Include="ObservableList.cs" />
+    <Compile Include="OuterNav\OuterNavPage.xaml.cs">
+      <DependentUpon>OuterNavPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OuterNav\OuterNavViewModel.cs" />
+    <Compile Include="Store\CategorySelectorViewModel.cs" />
+    <Compile Include="Store\ProductConfigurationPage.xaml.cs">
+      <DependentUpon>ProductConfigurationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Store\ProductConfigurationViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyInspector\ColorPaletteSelector.xaml.cs">
+      <DependentUpon>ColorPaletteSelector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyInspector\PropertyInspector.xaml.cs">
+      <DependentUpon>PropertyInspector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Store\StoreViewModel.cs" />
+    <Compile Include="StringProvider.cs" />
+    <Compile Include="Utils\ColorTypes.cs" />
+    <Compile Include="Utils\ColorUtils.cs" />
+    <Compile Include="Utils\CompositionCamera.cs" />
+    <Compile Include="Utils\JsonExtensionMethods.cs" />
+    <Compile Include="Utils\MathUtils.cs" />
+    <Compile Include="Utils\RichEditBoxAttachedProperties.cs" />
+    <Compile Include="Utils\VisualTreeHelpers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <PRIResource Include="Resources\en-us\Resources.resw" />
+    <Content Include="Assets\BadgeLogo.scale-100.png" />
+    <Content Include="Assets\BadgeLogo.scale-125.png" />
+    <Content Include="Assets\BadgeLogo.scale-150.png" />
+    <Content Include="Assets\BadgeLogo.scale-200.png" />
+    <Content Include="Assets\BadgeLogo.scale-400.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk1\Bottom_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk1\Middle_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk1\Top_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2A\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2B\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2C\Middle_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2C\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2D\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2E\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk3\Bottom_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk3\Middle_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk3\Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk3\Top_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk3\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk4\Bottom_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk4\Middle_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk4\Top_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk5\Bottom_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk5\Middle_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk5\Top_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk6\Bottom_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk6\Middle_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk6\Top_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk7\Bottom_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk7\Middle_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk7\Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk7\Top_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk8\Bottom_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk8\Bottom_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk8\Bottom_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk8\Middle_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk8\Middle_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk8\Middle_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk8\Top_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk8\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk8\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk8\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk10\Bottom_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk10\Bottom_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk10\Bottom_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk10\Middle_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk10\Middle_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk10\Middle_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk10\Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk10\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk10\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk10\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk10\Top_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk9\Bottom_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk9\Bottom_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk9\Bottom_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk9\Middle_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk9\Middle_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk9\Middle_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk9\Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk9\Top_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk9\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk9\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk9\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor1\Bottom_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor1\Middle_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor1\Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor1\Top_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor2\Bottom_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor2\Bottom_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor2\Bottom_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor2\Middle_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor2\Middle_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor2\Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor2\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor2\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor2\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor1\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor2\Top_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor3\Bottom_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor3\Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor3\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor3\Top_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor4\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor5\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor6\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor7\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor8\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang1\Top_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang2\Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang2\Top_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang3\Top_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang4\Top_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang5\Top_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang6\Top_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang6\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang2\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang2\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang2\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk6\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk7\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk4\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang5\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang1\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang4\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk5\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk1\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang3\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk3\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2C\Bottom_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2C\Bottom_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2C\Middle_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2C\Middle_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2C\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2C\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2D\Bottom_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2D\Bottom_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2D\Middle_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2D\Middle_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2D\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2D\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2E\Bottom_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2E\Bottom_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2E\Middle_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2E\Middle_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2E\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2E\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2B\Bottom_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2B\Bottom_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2B\Middle_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2B\Middle_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2B\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2B\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2A\Bottom_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2A\Bottom_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2A\Middle_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2A\Middle_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2A\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk2A\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor3\Bottom_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor3\Bottom_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor3\Middle_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor3\Middle_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor3\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor3\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor4\Bottom_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor4\Bottom_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor4\Middle_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor4\Middle_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor4\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor4\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor5\Bottom_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor5\Bottom_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor5\Middle_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor5\Middle_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor5\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor5\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor6\Bottom_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor6\Bottom_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor6\Middle_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor6\Middle_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor6\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor6\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor7\Bottom_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor7\Bottom_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor7\Middle_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor7\Middle_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor7\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor7\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor8\Bottom_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor8\Bottom_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor8\Middle_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor8\Middle_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor8\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor8\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang7\Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang7\Top_Thumb.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang7\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang7\Top_Halo.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang7\Top_Normal.png" />
+    <Content Include="Assets\LargeTile.scale-100.png" />
+    <Content Include="Assets\LargeTile.scale-125.png" />
+    <Content Include="Assets\LargeTile.scale-150.png" />
+    <Content Include="Assets\LargeTile.scale-200.png" />
+    <Content Include="Assets\LargeTile.scale-400.png" />
+    <Content Include="Assets\Products\DeskLamp.png" />
+    <Content Include="Assets\Products\FloorLamp.png" />
+    <Content Include="Assets\Products\Hanging.png" />
+    <Content Include="Assets\Products\HangingLamp.png" />
+    <Content Include="Assets\Products\RoomA_Thumbnail_Desk.png" />
+    <Content Include="Assets\Products\RoomA_Thumbnail_Floor.png" />
+    <Content Include="Assets\Products\RoomA_Thumbnail_Hanging.png" />
+    <Content Include="Assets\ShapeAnim\default.png" />
+    <Content Include="Assets\ShapeAnim\energenic.png" />
+    <Content Include="Assets\ShapeAnim\game.png" />
+    <Content Include="Assets\ShapeAnim\movie.png" />
+    <Content Include="Assets\ShapeAnim\party.png" />
+    <Content Include="Assets\ShapeAnim\sleep.png" />
+    <Content Include="Assets\SmallTile.scale-100.png" />
+    <Content Include="Assets\SmallTile.scale-125.png" />
+    <Content Include="Assets\SmallTile.scale-150.png" />
+    <Content Include="Assets\SmallTile.scale-200.png" />
+    <Content Include="Assets\SmallTile.scale-400.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-125.png" />
+    <Content Include="Assets\SplashScreen.scale-150.png" />
+    <Content Include="Assets\SplashScreen.scale-400.png" />
+    <Content Include="Assets\Square150x150Logo.scale-100.png" />
+    <Content Include="Assets\Square150x150Logo.scale-125.png" />
+    <Content Include="Assets\Square150x150Logo.scale-150.png" />
+    <Content Include="Assets\Square150x150Logo.scale-400.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-16.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-256.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-32.png" />
+    <Content Include="Assets\Square44x44Logo.altform-unplated_targetsize-48.png" />
+    <Content Include="Assets\Square44x44Logo.scale-100.png" />
+    <Content Include="Assets\Square44x44Logo.scale-125.png" />
+    <Content Include="Assets\Square44x44Logo.scale-150.png" />
+    <Content Include="Assets\Square44x44Logo.scale-400.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-16.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-256.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-32.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-48.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-125.png" />
+    <Content Include="Assets\StoreLogo.scale-150.png" />
+    <Content Include="Assets\StoreLogo.scale-200.png" />
+    <Content Include="Assets\StoreLogo.scale-400.png" />
+    <Content Include="Assets\Store\ceiling_32.png" />
+    <Content Include="Assets\Store\ceiling_38.png" />
+    <Content Include="Assets\Store\ceiling_39.png" />
+    <Content Include="Assets\Store\floor_16_poly.png" />
+    <Content Include="Assets\Store\floor_16_short_whitefabric.png" />
+    <Content Include="Assets\Store\table_34.png" />
+    <Content Include="Assets\Store\table_35.png" />
+    <Content Include="Assets\Store\table_36.png" />
+    <Content Include="Assets\Store\table_36_silverbase.png" />
+    <Content Include="Assets\Store\table_44.png" />
+    <Content Include="Assets\Videos\HeroVideo.mp4" />
+    <Content Include="Assets\Wide310x150Logo.scale-100.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-125.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-150.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-400.png" />
+    <Content Include="Resources\en-us\ModelData.json" />
+    <None Include="nuget.config" />
+    <None Include="VanArsdel_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Background\background.png" />
+    <Content Include="Assets\Background\background_normal.png" />
+    <Content Include="Assets\Background\background_shadow.png" />
+    <Content Include="Assets\buildDemoBackground-light.png" />
+    <Content Include="Assets\buildDemoBackground.png" />
+    <Content Include="Assets\DemoAssets\Halo\Halo1.png" />
+    <Content Include="Assets\DemoAssets\Halo\Halo2.png" />
+    <Content Include="Assets\DemoAssets\Halo\Halo3.png" />
+    <Content Include="Assets\DemoAssets\Halo\Halo4.png" />
+    <Content Include="Assets\DemoAssets\Halo\Halo5.png" />
+    <Content Include="Assets\DemoAssets\Halo\Halo6.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Blank.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor1\Bottom_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor1\Bottom_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor1\Middle_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor1\Middle_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor1\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Floor1\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang6\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang6\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk6\Bottom_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk6\Bottom_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk6\Middle_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk6\Middle_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk6\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk6\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk7\Bottom_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk7\Bottom_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk7\Middle_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk7\Middle_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk7\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk7\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk4\Bottom_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk4\Bottom_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk4\Middle_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk4\Middle_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk4\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk4\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang5\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang5\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang1\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang1\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang4\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang4\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk5\Bottom_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk5\Bottom_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk5\Middle_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk5\Middle_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk5\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk5\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk1\Bottom_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk1\Bottom_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk1\Middle_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk1\Middle_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk1\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk1\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang3\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Hang3\Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk3\Bottom_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk3\Bottom_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk3\Middle_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk3\Middle_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Desk3\Top_Color.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Shelf1.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Shelf_Front_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Shelf_Left_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Shelf_Right_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Shelf_Top.png" />
+    <Content Include="Assets\DemoAssets\Lamps\Shelf_Top_Normal.png" />
+    <Content Include="Assets\DemoAssets\Lamps\VanArsdel1.png" />
+    <Content Include="Assets\DemoAssets\Lamps\VanArsdel_Normal.png" />
+    <Content Include="Assets\Mats\test1.png" />
+    <Content Include="Assets\Mats\test2.png" />
+    <Content Include="Assets\Mats\test3.png" />
+    <Content Include="Assets\Products\Lamp_16_1_white.png" />
+    <Content Include="Assets\Products\Lamp_16_StandTrans.png" />
+    <Content Include="Assets\Products\Lamp_07_Redo2.png" />
+    <Content Include="Assets\Products\Lamp_1611.png" />
+    <Content Include="Assets\Products\Lamp_26_2.png" />
+    <Content Include="Assets\Products\Lamp_22_Clay.png" />
+    <Content Include="Assets\Products\Lamp_31.png" />
+    <Content Include="Assets\Products\Lamp_33.png" />
+    <Content Include="Assets\Products\Lamp_32.png" />
+    <Content Include="Assets\Products\Lamp_16_1.png" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Store\Compact.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\DeviceLayout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\LampControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Shadow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Main\MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OuterNav\OuterNavPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Store\CategeorySelectorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Store\CompactPurchaseView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Store\ProductConfigurationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PropertyInspector\ColorPaletteSelector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PropertyInspector\PropertyInspector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Store\PurchaseView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Store\StorePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.1.7</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.UI.Xaml">
+      <Version>2.0.180724003-prerelease</Version>
+    </PackageReference>
+    <PackageReference Include="Win2D.uwp">
+      <Version>1.23.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

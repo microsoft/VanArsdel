@@ -7,7 +7,7 @@ VanArsdel is an end-to-end sample built to showcase the Microsoft Fluent Design 
 
 The source code located in this repo was created with the Universal Windows Platform available in Visual Studio and is designed to run on desktop, mobile and future devices that support the Universal Windows Platform.
 
-> **Note:** If you are unfamiliar with XAML, the Universal Windows Platform or the Fluent Design System, it is highly recommended that you visit the [Design Universal Windows Platform](https://developer.microsoft.com/en-us/windows/apps/design) site and familiarize yourself with the language and framework that this tool is intended for.
+> **Note:** If you are unfamiliar with XAML, the Universal Windows Platform or the Fluent Design System, it is highly recommended that you visit the [Design Universal Windows Platform](https://developer.microsoft.com/en-us/windows/apps/design) site and familiarize yourself with the language and framework that this app is intended for.
 
 Universal Windows Platform development
 ---

@@ -1,12 +1,3 @@
----
-topic: sample
-languages:
-- csharp
-products:
-- windows
-- uwp
----
-
 VanArsdel UWP Sample
 ===
 

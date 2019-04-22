@@ -6,6 +6,7 @@
     xmlns:local="using:VanArsdel"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:model="using:VanArsdel.Model"
+    xmlns:winui="using:Microsoft.UI.Xaml.Controls"
     mc:Ignorable="d">
 
     <Grid>
@@ -158,6 +159,11 @@
                                 <StaticResource x:Key="ButtonBorderBrushPressed" ResourceKey="SystemControlHighlightTransparentBrush" />
                             </ResourceDictionary>
                         </ResourceDictionary.ThemeDictionaries>
+                        <winui:TeachingTip x:Name="StoreCustomizeTip"
+                            Target="{x:Bind CustomizeButton}"
+                            Title="Start here!"
+                            Loaded="AutoSaveTip_Loaded">
+                        </winui:TeachingTip>
                     </ResourceDictionary>
                 </Button.Resources>
             </Button>

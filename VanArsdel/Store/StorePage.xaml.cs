@@ -59,5 +59,10 @@ namespace VanArsdel
         }
 
         #endregion
+
+        private void AutoSaveTip_Loaded(object sender, RoutedEventArgs e)
+        {
+            StoreCustomizeTip.IsOpen = true;
+        }
     }
 }

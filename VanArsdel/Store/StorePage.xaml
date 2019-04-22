@@ -161,14 +161,14 @@
                         </ResourceDictionary.ThemeDictionaries>
                         <winui:TeachingTip x:Name="StoreCustomizeTip"
                             Target="{x:Bind CustomizeButton}"
-                            Title="Start here!"
+                            Title="Start building your own creations here!"
                             IsLightDismissEnabled="True"
                             Loaded="StoreCustomizeTip_Loaded"
                             Closing="StoreCustomizeTip_Closing">
                         </winui:TeachingTip>
                         <winui:TeachingTip 
                             x:Name="EngraveTextTip"
-                            Title="Don't forget to engrave your creation!"
+                            Title="Don't forget to engrave your lamp!"
                             IsLightDismissEnabled="True">
                         </winui:TeachingTip>
                     </ResourceDictionary>

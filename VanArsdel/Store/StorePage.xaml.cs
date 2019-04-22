@@ -67,7 +67,7 @@ namespace VanArsdel
 
         private void StoreCustomizeTip_Closing(Microsoft.UI.Xaml.Controls.TeachingTip sender, Microsoft.UI.Xaml.Controls.TeachingTipClosingEventArgs args)
         {
-            EngraveTextTip.IsOpen = true;
+            //EngraveTextTip.IsOpen = true;
         }
     }
 }

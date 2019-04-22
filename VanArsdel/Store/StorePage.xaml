@@ -166,11 +166,11 @@
                             Loaded="StoreCustomizeTip_Loaded"
                             Closing="StoreCustomizeTip_Closing">
                         </winui:TeachingTip>
-                        <winui:TeachingTip 
+                        <!-- <winui:TeachingTip 
                             x:Name="EngraveTextTip"
                             Title="Don't forget to engrave your lamp!"
                             IsLightDismissEnabled="True">
-                        </winui:TeachingTip>
+                        </winui:TeachingTip> -->
                     </ResourceDictionary>
                 </Button.Resources>
             </Button>

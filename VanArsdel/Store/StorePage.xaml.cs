@@ -60,9 +60,14 @@ namespace VanArsdel
 
         #endregion
 
-        private void AutoSaveTip_Loaded(object sender, RoutedEventArgs e)
+        private void StoreCustomizeTip_Loaded(object sender, RoutedEventArgs e)
         {
             StoreCustomizeTip.IsOpen = true;
+        }
+
+        private void StoreCustomizeTip_Closing(Microsoft.UI.Xaml.Controls.TeachingTip sender, Microsoft.UI.Xaml.Controls.TeachingTipClosingEventArgs args)
+        {
+            EngraveTextTip.IsOpen = true;
         }
     }
 }

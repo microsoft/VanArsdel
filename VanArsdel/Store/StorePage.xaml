@@ -5,8 +5,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="using:VanArsdel"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:model="using:VanArsdel.Model"
     xmlns:winui="using:Microsoft.UI.Xaml.Controls"
+    xmlns:model="using:VanArsdel.Model"
     mc:Ignorable="d">
 
     <Grid>
@@ -162,7 +162,14 @@
                         <winui:TeachingTip x:Name="StoreCustomizeTip"
                             Target="{x:Bind CustomizeButton}"
                             Title="Start here!"
-                            Loaded="AutoSaveTip_Loaded">
+                            IsLightDismissEnabled="True"
+                            Loaded="StoreCustomizeTip_Loaded"
+                            Closing="StoreCustomizeTip_Closing">
+                        </winui:TeachingTip>
+                        <winui:TeachingTip 
+                            x:Name="EngraveTextTip"
+                            Title="Don't forget to engrave your creation!"
+                            IsLightDismissEnabled="True">
                         </winui:TeachingTip>
                     </ResourceDictionary>
                 </Button.Resources>

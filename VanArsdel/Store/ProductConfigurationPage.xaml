@@ -10,6 +10,7 @@
     xmlns:devices="using:VanArsdel.Devices"
     xmlns:local="using:VanArsdel"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:winui="using:Microsoft.UI.Xaml.Controls"
     xmlns:shared="using:VanArsdel"
     d:DesignHeight="968"
     d:DesignWidth="1920"
@@ -93,7 +94,20 @@
                             Margin="0,0,0,8"
                             HorizontalAlignment="Stretch"
                             Click="{x:Bind ViewModel.OnBeginPurchase}"
-                            Style="{StaticResource AccentButtonStyle}" />
+                            Style="{StaticResource AccentButtonStyle}">
+                            <Button.Resources>
+                                <ResourceDictionary>
+                                    <winui:TeachingTip x:Name="BuyButtonTip"
+                                        Target="{x:Bind BuyButton}"
+                                        Title="Power user tip"
+                                        PreferredPlacement="Left"
+                                        Subtitle="Hold Shift while clicking to open up the form in compact view."
+                                        IsLightDismissEnabled="True"
+                                        Loaded="BuyButton_Loaded">
+                                    </winui:TeachingTip>
+                                </ResourceDictionary>
+                            </Button.Resources>
+                        </Button>
                         <Button
                             x:Name="CancelButton"
                             x:Uid="CancelProductConfigurationButton"

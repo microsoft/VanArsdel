@@ -5,11 +5,15 @@ using System.Collections.Generic;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using VanArsdel.Devices;
+using Windows.UI.Xaml.Input;
+using Windows.Foundation.Metadata;
+using Windows.ApplicationModel.DataTransfer;
 
 namespace VanArsdel
 {
     public sealed partial class PropertyInspector : UserControl
     {
+        private RichEditBox _engraveREB;
         public PropertyInspector()
         {
             this.InitializeComponent();
@@ -118,6 +122,54 @@ namespace VanArsdel
             {
                 OuterGrid.Visibility = Visibility.Visible;
             }
+        }
+
+        private void Menu_Opening(object sender, object e)
+        {
+            CommandBarFlyout myFlyout = sender as CommandBarFlyout;
+            AppBarButton shareButton = new AppBarButton();
+            shareButton.Command = new StandardUICommand(StandardUICommandKind.Share);
+            shareButton.Click += ShareButton_Click;
+            myFlyout.PrimaryCommands.Add(shareButton);
+        }
+
+        private void ShareButton_Click(object sender, RoutedEventArgs e)
+        {
+            DataTransferManager dataTransferManager = DataTransferManager.GetForCurrentView();
+            dataTransferManager.DataRequested += DataTransferManager_DataRequested;
+
+            DataTransferManager.ShowShareUI();
+        }
+
+        private void DataTransferManager_DataRequested(DataTransferManager sender, DataRequestedEventArgs args)
+        {
+            DataRequest request = args.Request;
+            request.Data.SetText(_engraveREB.TextDocument.ToString());
+            request.Data.SetRtf(_engraveREB.Document.ToString());
+            request.Data.Properties.Title = new StringProvider(Windows.ApplicationModel.Resources.ResourceLoader.GetForCurrentView()).GetString("ShareDataPropertyTitle");
+        }
+
+        private void RichEditBox_Loaded(object sender, RoutedEventArgs e)
+        {
+            _engraveREB = sender as RichEditBox;
+
+            if (ApiInformation.IsApiContractPresent("Windows.Foundation.UniversalApiContract", 7))
+            {
+                (sender as RichEditBox).SelectionFlyout.Opening += Menu_Opening;
+                (sender as RichEditBox).ContextFlyout.Opening += Menu_Opening;
+            }
+        }
+
+        private void RichEditBox_Unloaded(object sender, RoutedEventArgs e)
+        {
+            // Prior to UniversalApiContract 7, RichEditBox did not have a default ContextFlyout set.
+            if (ApiInformation.IsApiContractPresent("Windows.Foundation.UniversalApiContract", 7))
+            {
+                (sender as RichEditBox).SelectionFlyout.Opening -= Menu_Opening;
+                (sender as RichEditBox).ContextFlyout.Opening -= Menu_Opening;
+            }
+
+            _engraveREB = null;
         }
     }
 }

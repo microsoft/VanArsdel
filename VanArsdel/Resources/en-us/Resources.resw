@@ -307,4 +307,7 @@
   <data name="CreditCardExpirationDateYearSelector.Header" xml:space="preserve">
     <value>Year</value>
   </data>
+  <data name="ShareDataPropertyTitle" xml:space="preserve">
+    <value>Engraving</value>
+  </data>
 </root>

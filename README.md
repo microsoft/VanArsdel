@@ -1,3 +1,15 @@
+---
+page_type: sample
+name: Van Arsdel Sample
+languages:
+  - csharp
+  - xaml
+products:
+  - windows
+  - windows-uwp
+description: Demonstrates how to use the UWP XAML capabilities for a store application complete with forms, inventory, and custom lamp creation pages.
+---
+
 VanArsdel UWP Sample
 ===
 

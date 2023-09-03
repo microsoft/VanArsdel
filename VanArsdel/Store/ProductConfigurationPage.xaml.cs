@@ -158,5 +158,10 @@ namespace VanArsdel
             DeviceLayout.DayMode = false;
             DayNightSelectionPanel.RequestedTheme = ElementTheme.Dark;
         }
+
+        private void BuyButton_Loaded(object sender, RoutedEventArgs e)
+        {
+            BuyButtonTip.IsOpen = true;
+        }
     }
 }

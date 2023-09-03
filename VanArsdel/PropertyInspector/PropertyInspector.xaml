@@ -222,7 +222,9 @@
                 HorizontalAlignment="Stretch"
                 dls:RichEditBoxAttachedProperties.BindableText="{x:Bind Path=Value, Mode=OneWay}"
                 Header="{x:Bind Path=Header, Mode=OneWay}"
-                TextChanged="{x:Bind Path=RichEditBox_TextChanged, Mode=OneWay}" />
+                TextChanged="{x:Bind Path=RichEditBox_TextChanged, Mode=OneWay}" 
+                Loaded="RichEditBox_Loaded"
+                Unloaded="RichEditBox_Unloaded"/>
         </DataTemplate>
 
         <devices:PropertyTemplateSelector
